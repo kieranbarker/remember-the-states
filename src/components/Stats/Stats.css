@@ -1,0 +1,16 @@
+.stats-key,
+.stats-value {
+  display: inline;
+}
+
+.stats-key {
+  font-weight: bold;
+}
+
+.stats-key::after {
+  content: ": ";
+}
+
+.stats-value {
+  margin-inline-start: 0;
+}
