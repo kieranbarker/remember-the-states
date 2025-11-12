@@ -13,11 +13,15 @@ export default function Stats({
     <dl className="stats">
       <div>
         <dt className="stats-key">Guessed</dt>
-        <dd className="stats-value">{numGuessed}</dd>
+        <dd className="stats-value" data-testid="numGuessed">
+          {numGuessed}
+        </dd>
       </div>
       <div>
         <dt className="stats-key">Remaining</dt>
-        <dd className="stats-value">{numRemaining}</dd>
+        <dd className="stats-value" data-testid="numRemaining">
+          {numRemaining}
+        </dd>
       </div>
     </dl>
   );
