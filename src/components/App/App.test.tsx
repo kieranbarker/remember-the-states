@@ -13,12 +13,6 @@ it("reveals a state when correctly guessed", async () => {
   const state = screen.getByText(/california/i);
   expect(state).toHaveRole("listitem");
   expect(state).toBeVisible();
-
-  const numGuessed = screen.getByTestId("numGuessed");
-  expect(numGuessed).toHaveTextContent("1");
-
-  const numRemaining = screen.getByTestId("numRemaining");
-  expect(numRemaining).toHaveTextContent("49");
 });
 
 it("updates the stats when a state is correctly guessed", async () => {
